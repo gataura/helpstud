@@ -1,8 +1,9 @@
 body {
-	font-family: Verdana;
+	font-family: "Pt Sans", Verdana, Arial, Times New Roman;
 	font-size: 20px;
 	color: #333;
-	background: #f3f3f3;
+	background: #B6B6B6;
+	text-shadow: 0 1px 0 #eee;
 }
 
 table {
