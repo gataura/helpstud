@@ -1,0 +1,107 @@
+body {
+	font-family: Roboto, Verdana, Arial, Times New Roman;
+	font-size: 20px;
+	color: #333;
+	background: #B6B6B6;
+	text-shadow: 0 1px 0 #eee;
+}
+
+table {
+	width: 10%;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+td,th {
+	padding: 8px;
+	border: 1px solid grey;
+}
+
+.nav {
+    list-style:none;
+    margin:30px;
+    opacity:.5;
+    padding:0;
+    width:50px;
+    
+    -moz-transition:opacity .3s ease-in-out;
+    -webkit-transition:opacity .3s ease-in-out;
+    -o-transition:opacity .3s ease-in-out;
+    transition:opacity .3s ease-in-out;
+}
+
+.nav:hover {
+    opacity:1;
+}
+
+.nav li {
+    height:50px;
+    overflow:hidden;
+    width:50px;
+    
+    -moz-transition:width .2s ease-in-out, height .2s ease-in-out .2s;
+    -webkit-transition:width .2s ease-in-out, height .2s ease-in-out .2s;
+    -o-transition:width .2s ease-in-out, height .2s ease-in-out .2s;
+    transition:width .2s ease-in-out, height .2s ease-in-out .2s;
+}
+
+.nav li:hover {
+    height:175px;
+    width:200px;
+}
+
+.nav li a {
+    background:#bbb;
+    color:black;
+    cursor:pointer;
+    display:block;
+    height:40px;
+    line-height:40px;
+    margin:1px;
+    padding-left:15px;
+    width:200px;
+    text-decoration:none;
+    
+    -moz-transition:background .2s ease-in-out;
+    -webkit-transition:background .2s ease-in-out;
+    -o-transition:background .2s ease-in-out;
+    transition:background .2s ease-in-out;
+}
+
+.nav li a:hover {
+    background:#2fc5ff;
+}
+
+.nav li a:first-child {
+    font-size:1.1em;
+    height:50px;
+    line-height:50px;
+    position:relative;
+    text-indent:36px;
+}
+
+.nav li a:first-child::before {
+    content:'';
+    display:block;
+    height:32px;
+    left:9px;
+    position:absolute;
+    top:9px;
+    width:32px;
+}
+
+.main-menu a:first-child::before {
+    background:url(http://defaulticon.com/images/icons32x32/home.png?itok=4tougUBV) center no-repeat;
+}
+
+.settings a:first-child::before {
+    background:url(http://defaulticon.com/images/icons32x32/settings.png?itok=f3WwNrKf) center no-repeat;
+}
+
+.link a:first-child::before {
+    background:url(http://defaulticon.com/images/icons32x32/link.png?itok=ZWITPB3E) center no-repeat;
+}
+
+.search a:first-child::before {
+    background:url(http://defaulticon.com/images/icons32x32/search_0.png?itok=eqsHkE5C) center no-repeat;
+}
