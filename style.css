@@ -1,5 +1,9 @@
 body {
+<<<<<<< HEAD
 	font-family: Roboto, Verdana, Arial, Times New Roman;
+=======
+	font-family: "Pt Sans", Verdana, Arial, Times New Roman;
+>>>>>>> bfec10b533c0f9750387b2563af9aafe7b972e0e
 	font-size: 20px;
 	color: #333;
 	background: #B6B6B6;
@@ -15,6 +19,7 @@ table {
 td,th {
 	padding: 8px;
 	border: 1px solid grey;
+<<<<<<< HEAD
 }
 
 .nav {
@@ -104,4 +109,6 @@ td,th {
 
 .search a:first-child::before {
     background:url(http://defaulticon.com/images/icons32x32/search_0.png?itok=eqsHkE5C) center no-repeat;
+=======
+>>>>>>> bfec10b533c0f9750387b2563af9aafe7b972e0e
 }
