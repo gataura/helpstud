@@ -1,3 +1,7 @@
+* {
+	transition: all .2s
+}
+
 body {
 	font-family: Roboto, Verdana, Arial, Times New Roman;
 	font-family: "Pt Sans", Verdana, Arial, Times New Roman;
@@ -218,4 +222,201 @@ td,th {
 
 #side6 {
 	transform: rotateY(180deg);
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.square {
+	width: 60px;
+	height: 60px;
+	background: #333;
+	margin: 30px;
+	box-shadow: 0 0 4px rgba(0,0,0,.4);
+	animation: spin 2s linear 1s infinite alternate;
+	/*animation-name: spin;
+	-webkit-animation-duration: 2s;
+	-o-animation-duration: 2s;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;  //тоже самое что в пункте animation//
+	animation-timing-function: linear; 
+	animation-delay: 1s;
+	-webkit-animation-direction: alternate;
+	-o-animation-direction: alternate;
+	animation-direction: alternate;*/
+}
+
+.square:hover {
+	animation-play-state: paused;
+}
+
+.contain {
+	width: 200px;
+	height: 30px;
+	border: 3px solid #fff;
+	background: #999;
+	border-radius: 7px;
+	overflow: hidden;
+	margin: 40px;
+	box-shadow: 0 3px 4px rgba(0,0,0,.3);
+}
+
+.bar {
+	height: 30px;
+	width: 400px;
+	background: repeating-linear-gradient(45deg, rgba(255,255,255,.9) 0, rgba(255,255,255,.9) 5px, transparent 5px, transparent 10px);
+	animation: slide 3s linear infinite;
+}
+
+@keyframes slide{
+	0%{
+		margin-left: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		margin-left: -100%;
+	}
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+@font-face {
+	font-family: PTSans;
+	src: url(2221.eot);
+	src: url('dsdsdaeqwqqe223da444323~~~```'),
+	url(ptsans.woff) format('woff'),
+	url(ptsans.ttf) format('truetype'),
+	url(ptsans.svg) format('svg');
+	font-weight: normal
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'SignifyLite';
+    src: url('signifylite-webfont.eot');
+    src: url('signifylite-webfont.eot?#iefix') format('embedded-opentype'),
+         url('signifylite-webfont.woff') format('woff'),
+         url('signifylite-webfont.ttf') format('truetype'),
+         url('signifylite-webfont.svg#SignifyLite') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.label {
+	font-family: PTSans, Arial;
+	font-size: 1.4em;
+}
+
+section {
+	margin: 3px 40px;
+	padding: 20px;
+}
+
+.block {
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0 3px 20px rgba(0,0,0,.2);
+	border-top: 1px solid rgba(255, 255, 255, .7);
+}
+
+.btn {
+	width: 60px;
+	height: 60px;
+	font: 1.4em SignifyLite;
+	display: inline-block;
+	margin: 5px;
+	text-align: center;
+	line-height: 49px;
+	color: #333;
+	border-radius: 3px;
+	transition: all .5s;
+}
+
+.btn:hover {
+	color: #eee;
+	background: #333;
+	cursor: pointer;
+	text-shadow: none;
+	transform: scale(1.2);
+}
+
+.block1{
+	background: #333;
+	width: 940px;
+	height: 200px;
+	margin: 5px auto;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, .4);
+	position: relative;
+}
+
+@media only screen and (min-width: 610px) {
+
+	.block1:after {
+		content: 'New element';
+		position: absolute;
+		top: 10px;
+		left: -5px;
+		background: #222;
+		border-radius: 5px;
+		padding: 10px;
+		color: #eee;
+	}
+}
+
+.block1:hover {
+	animation: bounce 1s linear infinite;
+}
+
+@media only screen and (max-width: 950px) {
+	.block1 {
+		width: 650px;
+		background: #24476c;
+	}
+}
+
+@media only screen and (max-width: 610px) {
+	.block1 {
+		width: 320px;
+		background: #85221e;
+	}
+
+	.second, .third {
+		height: 50px;
+	}
+}
+
+.colcol {
+	margin: 50px;
+	column-width: 300px;
+	column-gap: 100px;
+	column-rule: 2px dashed rgba(0, 0, 0, .5);
 }
