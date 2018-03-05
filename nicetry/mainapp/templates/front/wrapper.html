@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tittle</title>
+	{% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/itsastyle.css' %}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+		<a href="#" class="navbar-brand">
+			<img src="https://www.freelogoservices.com/api/main/images/1j+ojVVCOMkX9Wyrexe4hGfK7eDcrhpZxEeZ2j1jbzhO8A5olDZo2KsqsKg2KxgB5lEMhhQOcg==" width="80px"  alt="">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContens" aria-expended="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a href="#" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link disabled">NoHome</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">OuttaHome</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link" data-toggle="modal" data-target="#exampleModal">ShitHome</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">WTFHome</a>
+				</li>
+				<li class="nav-item">
+					<a href="/news" class="nav-link">News</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input type="text" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0">Search</button>
+			</form>
+		</div>
+	</nav>
+
+	{% block content %}
+	{% endblock %}
+
+    <a href="/" class="btn btn-primary">Главная</a>
+    <a href="/contact" class="btn btn-info">Контакты</a>
+    <a href="/getout" class="btn btn-danger">Работа</a>
+
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/itsajsfile.js' %}"></script>
+</body>
+</html>

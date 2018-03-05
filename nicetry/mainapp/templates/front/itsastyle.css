@@ -1,0 +1,25 @@
+body {
+	font-family: Roboto, Verdana, Arial, Times New Roman;
+	font-size: 20px;
+	color: #333;
+	background: url('http://365psd.ru/images/backgrounds/bg-lightl-903.jpg');
+	text-shadow: 0 1px 0 #eee;
+	height: 2000px;
+}
+
+.p-0 {
+	padding: 0;
+}
+
+.mar {
+	margin: 100px;
+	width: 100px;
+}
+
+.modal-header .close {
+	outline: none;
+}
+
+.nav-link {
+	outline: none;
+}

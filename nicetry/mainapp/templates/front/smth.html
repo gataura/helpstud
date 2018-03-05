@@ -1,0 +1,12 @@
+{% extends "front/wrapper.html" %}
+
+{% block content %}
+    {% for val in values %}
+        {% if val == 'Если хотите работы' %}
+            <h4>{{val}}</h4>
+        {% endif %}
+        {% if val == 'Отъебитесь нахуй' %}
+            <h2>{{val}}</h2>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

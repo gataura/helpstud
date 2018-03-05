@@ -1,0 +1,7 @@
+{% extends "front/wrapper.html" %}
+
+{% block content %}
+    <h2 class="blog-post-title">{{articles.title}}</h2>
+    <h6 class="blog-post-meta">Date: {{articles.date|date:"d-m-y h:i:s"}}</h6>
+    <p>{{articles.post|safe|linebreaks}}</p>  <!-- safe для того чтобы читались html коды<!-->
+{% endblock %}
